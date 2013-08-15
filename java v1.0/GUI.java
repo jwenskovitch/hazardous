@@ -12,14 +12,9 @@ public class GUI extends JPanel {
 	private ArrayList<Asteroid> m_asteroidsFull;
 	private ArrayList<Asteroid> m_asteroidsVisible;
 
-    // Form controls and images
+    // Form controls
     private JComboBox ddlEcc, ddlInc, ddlMag, ddlPer, ddlAph, ddlOrb, ddlEar, ddlColor;
-    private JButton btnUp, btnDown, btnLeft, btnRight, btnVarDesc;
-    private int mapImage = 0, var1image = 0, var2image = 0, var3image = 0, errorimage = 0, year = 1993;
-    private BufferedImage imgMainMap, imgDetailsView, imgBlank;
-    private BufferedImage imgSmallHeatMaps[][][];
     private ActionListener listener = new changeListener();
-    private Boolean chernoff = false;
 
 
 	// Mouse info
@@ -27,6 +22,7 @@ public class GUI extends JPanel {
 	private int mouseXNew, mouseYNew;
 	private int mouseXChanged, mouseYChanged;
 	private boolean mouseDown;
+
 	private int currentCenterX;
 	private int currentCenterY;
 	private double currentAU;

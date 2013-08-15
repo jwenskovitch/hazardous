@@ -7,7 +7,6 @@ class main {
 
         try {
 			JFrame frame = new JFrame("Potentially Hazardous Asteroids");
-			frame.setVisible(true);
             GUI theProject = new GUI();
 			frame.add(theProject);
             UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
@@ -17,6 +16,7 @@ class main {
             frame.setLocation(50, 50);
             frame.setSize(Constants.WINDOW_WIDTH, Constants.WINDOW_HEIGHT);
             frame.setResizable(false);
+			frame.setVisible(true);
         } catch (Exception e) {
             System.out.println("An error occured...");
             System.out.println(e.getMessage());
