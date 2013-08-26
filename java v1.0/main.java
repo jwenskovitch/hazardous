@@ -9,7 +9,7 @@ class main {
 			JFrame frame = new JFrame("Potentially Hazardous Asteroids");
             GUI theProject = new GUI();
 			frame.add(theProject);
-            UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
+            //UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
             SwingUtilities.updateComponentTreeUI(frame);
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.getContentPane().setBackground(new Color(233, 233, 233));
